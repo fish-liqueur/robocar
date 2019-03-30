@@ -81,7 +81,12 @@ nav {
   display: flex;
   width: 100%;
   max-width: 1170px;
+  font-size: 16px;
   margin: 0 auto;
+}
+
+nav a {
+  align-self: center;
 }
 
 .header__wrapper {
@@ -94,8 +99,16 @@ nav {
   justify-content: flex-start;
 }
 
+.header__wrapper-left a:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header__wrapper-right {
   justify-content: flex-end;
+}
+
+.header__wrapper-right a:not(:first-child) {
+  margin-left: 40px;
 }
 
 .header__logo {
@@ -114,6 +127,12 @@ nav {
   font-family: inherit;
 }
 
+.btn span,
+.btn img {
+  margin: auto;
+  align-self: center;
+}
+
 .nav__viktorina {
   /*background: linear-gradient(-136deg, #FFC700 0%, #FEAE11 100%);*/
   background-image: linear-gradient(-136deg, #FFC700 0%, #FEAE11 100%);
@@ -121,9 +140,48 @@ nav {
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0;
+  padding: 5px 15px 10px;
 }
 
-.nav__qa-mark {}
+.nav__viktorina img {
+  margin-right: 10px;
+}
+
+.nav__qa {
+  color: #fff;
+}
+
+.nav__qa-mark {
+  border-radius: 20px;
+  border: #fff 2px solid;
+  padding: 1px 6px;
+  margin-right: 10px;
+}
+
+.nav__feedback {
+  color: #fff;
+}
+
+.nav__reg {
+  color: #fff;
+}
+
+.nav__feedback img {
+  width: 20px;
+  height: 15.8px;
+  margin-right: 10px;
+}
+
+.nav__login {
+  background-color: #fff;
+  color: #008DCF;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav__login img {
+  margin-right: 10px;
+}
 
 .header__calendar-robots {
   display: flex;
@@ -133,7 +191,7 @@ nav {
 
 .header__calendar-robots-left,
 .header__calendar-robots-right {
-  /* display: none; */
+  display: none;
   width: 214px;
   height: 455px;
 }
@@ -175,11 +233,6 @@ header h1 {
   margin: 0 auto 50px;
 }
 
-.btn span {
-  margin: auto;
-  align-self: center;
-}
-
 .transparent-btn {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
@@ -195,4 +248,28 @@ header h1 {
   height: 60px;
   border-radius: 15px;
   font-size: 16px;
+}
+
+.header__button_learn-more {
+  position: relative;
+}
+
+.header__button_learn-more::after {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  left: 50%;
+  top: 70px;
+}
+
+@media (min-width: 1281px) {
+
+  .header__calendar-robots-left,
+  .header__calendar-robots-right {
+    display: block;
+  }
 }
