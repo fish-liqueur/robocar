@@ -66,8 +66,10 @@ body {
 
 header {
   background-image: radial-gradient(50% 115%, #8CCFFF 40%, #1A7CDB 100%);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .05);
   font-family: Lato-Bold, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 header a {
@@ -80,7 +82,7 @@ nav {
   width: 100%;
   max-width: 1170px;
   font-size: 16px;
-  margin: 10px auto 0;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -219,7 +221,7 @@ header h1 {
 .header__calendar-robots {
   display: flex;
   justify-content: center;
-  margin: 50px auto 10px;
+  margin: 0 auto;
 }
 
 .header__calendar-robots-left,
@@ -289,7 +291,6 @@ header h1 {
 }
 
 @media (min-width: 1281px) {
-
   .header__calendar-robots-left,
   .header__calendar-robots-right {
     display: block;
@@ -487,6 +488,94 @@ header h1 {
   }
 }
 
+/*TABS-SLIDER BLOCK*/
+.involvement__slider-wrapper {
+  width: 1180px;
+  height: 324px;
+  margin: 0 auto;
+}
+
+.involvement__slider {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: skew(-12deg, 0);
+}
+
+.involvement__slide {
+  cursor: pointer;
+  float: left;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.involvement__slide:last-child {
+  float: left;
+}
+
+.involvement__slide-active {
+  width: 40%;
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.involvement__slide-inactive {
+  width: 20%;
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.involvement__slide-1 {
+  background-color: #99CA3A;
+}
+
+.involvement__slide-2 {
+  background-color: #8CCFFF;
+}
+
+.involvement__slide-3 {
+  background-color: #FFF3BC;
+}
+
+.involvement__slide-4 {
+  background-color: #FFAF55;
+}
+
+.involvement__slide {
+  position: relative;
+}
+
+.involvement__slide img {
+  position: absolute;
+  transform: skew(12deg, 0);
+  left: -18px;
+  top: 0;
+}
+
+.involvement__step-descr-wrapper {
+  background-color: #0d569b;
+}
+
+.involvement__step-descr-text {
+  color: #fff;
+}
 
 /*FOOTER*/
 footer {
@@ -624,9 +713,7 @@ h2 {
   text-align: center;
 }
 
-.main__involvement {
-
-}
+.main__involvement {}
 
 .involvement__title {
   padding: 60px 25px 40px;

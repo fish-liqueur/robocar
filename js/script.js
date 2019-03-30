@@ -1,4 +1,15 @@
 $(window).load(function() {
+//
+// var invSliderSelector = function () {
+//
+// }
+
+    $('.involvement__slide').on("mouseenter", function() {
+        $(this).addClass('involvement__slide-active');
+        $(this).removeClass('involvement__slide-inactive');
+        $(this).siblings().removeClass('involvement__slide-active');
+        $(this).siblings().addClass('involvement__slide-inactive');
+    });
 
     // Slider for partners
     $('.loading__slider').slick({
@@ -13,5 +24,4 @@ $(window).load(function() {
         prevArrow: '<div class="loading-slider__prev"></div>',
         nextArrow: '<div class="loading-slider__next"></div>'
     });
-
 });
