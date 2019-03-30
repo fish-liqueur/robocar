@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Regular.woff2') format('woff2'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype'),
+    url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Exo2-BoldItalic;
+    src: url('../fonts/Exo2-BoldItalic.eot');
+    src: url('../fonts/Exo2-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Exo2-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Exo2-BoldItalic.woff') format('woff'),
+    url('../fonts/Exo2-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Exo2-BoldItalic.svg#Exo2-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lato-Semibold;
+    src: url('../fonts/Lato-Semibold.eot');
+    src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Semibold.woff2') format('woff2'),
+    url('../fonts/Lato-Semibold.woff') format('woff'),
+    url('../fonts/Lato-Semibold.ttf') format('truetype'),
+    url('../fonts/Lato-Semibold.svg#Lato-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Exo2-Bold;
+    src: url('../fonts/Exo2-Bold.eot');
+    src: url('../fonts/Exo2-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Exo2-Bold.woff2') format('woff2'),
+    url('../fonts/Exo2-Bold.woff') format('woff'),
+    url('../fonts/Exo2-Bold.ttf') format('truetype'),
+    url('../fonts/Exo2-Bold.svg#Exo2-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Bold.woff2') format('woff2'),
+    url('../fonts/Lato-Bold.woff') format('woff'),
+    url('../fonts/Lato-Bold.ttf') format('truetype'),
+    url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    background: #FFFFFF;
+    background-image: radial-gradient(50% 115%, #8CCFFF 40%, #1A7CDB 100%);
+    border: 1px solid rgba(0,0,0,0.01);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    height: 740px;
+    font-family: Lato-Bold;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.header__wrapper {
+display: flex;
+flex-direction: row;
+    width: 40%;
+}
+
+.header__wrapper-left {
+    justify-content: flex-start;
+}
+
+.header__wrapper-right {
+    justify-content: flex-end;
+}
+
+.header__logo {
+    /*background: url("/img/logo.png") center center no-repeat;*/
+    /*height: 100px;*/
+    position: relative;
+    width: 177px;
+}
+
+.header__logo img {
+    position: absolute;
+}
+
+.btn {
+    display: flex;
+    font-family: inherit;
+}
+
+.nav__viktorina {
+    /*background: linear-gradient(-136deg, #FFC700 0%, #FEAE11 100%);*/
+    background-image: linear-gradient(-136deg, #FFC700 0%, #FEAE11 100%);
+    border-radius: 17px;
+        font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.nav__qa-mark {
+
+}
+
+.header__slider {
+    max-width: 1155px;
+    margin: 50px auto 10px;
+}
+
+.header__slider_content {
+    background: url("../img/slider/slide-1.png") center center no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 455px;
+}
+
+header h1 {
+    max-width: 800px;
+    /*font-family: Exo2-Bold;*/
+    font-size: 36px;
+    color: #FFF;
+    letter-spacing: -0.38px;
+    text-align: center;
+    line-height: 37px;
+    margin: 0 auto 20px;
+}
+
+.header__buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.btn span {
+    margin: auto;
+    align-self: center;
+}
+
+.transparent-btn {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.white-btn {
+    background: #FFFFFF;
+    color: #0F63B3;
+}
+
+.header__button {
+    width: 260px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 16px;
+}

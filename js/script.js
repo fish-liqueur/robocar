@@ -1,0 +1,3 @@
+$('.header__slider').slick({
+
+});
