@@ -65,9 +65,7 @@ body {
 }
 
 header {
-  background: #FFFFFF;
   background-image: radial-gradient(50% 115%, #8CCFFF 40%, #1A7CDB 100%);
-  border: 1px solid rgba(0, 0, 0, 0.01);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   font-family: Lato-Bold;
   padding-top: 10px;
@@ -137,7 +135,7 @@ header h1 {
 
 .header__logo img {
   position: absolute;
-  left: calc(50% - 88.5px);
+  left: calc(50% - 88px);
 }
 
 .btn {
@@ -480,7 +478,7 @@ header h1 {
   }
 
   .header__wrapper-right a:not(:first-child) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -719,7 +717,7 @@ h2 {
 .main__involvement {}
 
 .involvement__title {
-  padding: 60px 20px 40px;
+  padding: 60px 25px 40px;
 }
 
 .main__loading {
@@ -727,7 +725,7 @@ h2 {
 }
 
 .loading__title {
-  padding: 50px 20px 40px;
+  padding: 50px 25px 40px;
 }
 
 .loading__slider {
@@ -751,7 +749,7 @@ h2 {
 }
 
 .loading-slider__prev {
-  left: calc(50% - 555px)
+  left: calc(50% - 555px);
 }
 
 .loading-slider__next {
@@ -777,6 +775,7 @@ h2 {
 
 .logotypes__left {
   margin-right: 160px;
+  opacity: .6;
 }
 
 .logotypes__center.--ivi {
@@ -785,13 +784,76 @@ h2 {
 
 .logotypes__right {
   margin-left: 160px;
+  opacity: .6;
+}
+
+.logotypes__left.--ivi,
+.logotypes__right.--ivi {
+  width: 70px;
+}
+
+.logotypes__left.--hyundai,
+.logotypes__right.--hyundai {
+  width: 87px;
 }
 
 .logotypes__img {
   width: 100%;
 }
 
-.slider-item__points {}
+.slider-item__points {
+  display: flex;
+  justify-content: center;
+}
+
+.points__numb {
+  padding-top: 60px;
+  margin-right: 61px;
+}
+
+.points-numb__quantity {
+  font-family: Lato-Semibold, sans-serif;
+  font-size: 50px;
+  line-height: 33px;
+  color: #fff;
+}
+
+.points-numb__icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 11px;
+}
+
+.points__text {
+  padding-top: 18px;
+  width: 515px;
+  color: #fff;
+  text-align: center;
+}
+
+.points-text__title {
+  font-family: Lato-Semibold, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+}
+
+.points-text__guide {
+  margin-top: 14px;
+  opacity: .7;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.points__cover {
+  margin-left: 60px;
+}
+
+.points__cover img {
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, .2);
+}
+
 
 .slider-item__button {
   position: absolute;
@@ -808,4 +870,121 @@ h2 {
   text-align: center;
   text-decoration: none;
   color: #fff;
+}
+
+@media all and (max-width: 1024px) {
+  .logotypes__left {
+    margin-right: 110px;
+  }
+
+  .logotypes__right {
+    margin-left: 110px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .involvement__title,
+  .loading__title {
+    padding: 30px 25px 30px;
+  }
+
+  .main__loading {
+    padding-bottom: 60px;
+  }
+
+  .loading__slider {
+    height: 540px;
+    border-radius: 0;
+  }
+
+  .loading-slider__prev,
+  .loading-slider__next {
+    top: 33px;
+  }
+
+  .loading-slider__prev {
+    left: 20px;
+  }
+
+  .loading-slider__next {
+    right: 20px;
+  }
+
+  .slider-item__logotypes {
+    height: 94px;
+  }
+
+  .logotypes__left,
+  .logotypes__right {
+    display: none;
+  }
+
+  .logotypes__center.--ivi {
+    width: 90px;
+  }
+
+  .slider-item__points {
+    flex-wrap: wrap;
+  }
+
+  .points__numb {
+    order: 1;
+    padding-top: 50px;
+    margin-right: 0;
+    margin-left: 14px;
+  }
+
+    .points-numb__icon {
+    margin-left: 5px;
+  }
+
+  .points__text {
+    padding: 14px 25px 30px;
+    width: 100%;
+  }
+
+  .points-text__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .points__cover {
+    margin-left: 0;
+  }
+
+  .points__cover img {
+    width: 105px;
+    transform: rotate(-8deg);
+  }
+
+  .slider-item__button {
+    bottom: 70px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .loading__slider {
+    height: 550px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .points__text {
+    padding: 14px 20px 30px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .points-text__title {
+    font-size: 22px;
+  }
+
+  .points-text__guide {
+    font-size: 14px;
+  }
 }
