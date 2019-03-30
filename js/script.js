@@ -1,3 +1,0 @@
-$('.header__slider').slick({
-
-});
