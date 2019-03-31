@@ -58,6 +58,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1920px;
   min-width: 320px;
@@ -161,6 +165,7 @@ header h1 {
 
 .nav__viktorina img {
   margin-right: 10px;
+  vertical-align: bottom;
 }
 
 .nav__qa {
@@ -172,6 +177,7 @@ header h1 {
   border: #fff 2px solid;
   padding: 1px 7px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .nav__feedback {
@@ -184,8 +190,9 @@ header h1 {
 
 .nav__feedback img {
   width: 20px;
-  height: 15.8px;
+  height: 16px;
   margin-right: 10px;
+  vertical-align: bottom;
 }
 
 .nav__login {
@@ -202,6 +209,7 @@ header h1 {
   width: 19px;
   height: 19px;
   margin-right: 10px;
+  vertical-align: bottom;
 }
 
 .nav__burger {
@@ -395,6 +403,7 @@ header h1 {
     height: 12px;
     width: 12px;
     margin-right: 5px;
+    vertical-align: middle;
   }
 
   .header__logo img {
@@ -474,6 +483,7 @@ header h1 {
 
   .nav__viktorina img {
     margin-right: 0;
+    vertical-align: baseline;
   }
 
   .header__wrapper-right a:not(:first-child) {

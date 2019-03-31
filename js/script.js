@@ -24,4 +24,53 @@ $(window).load(function() {
         prevArrow: '<div class="loading-slider__prev"></div>',
         nextArrow: '<div class="loading-slider__next"></div>'
     });
+
+    // Popup
+    $('.js-login, .js-reg, .js-password').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
+
+    $('.popup__ok').click(function() {
+        $.magnificPopup.instance.close();
+    });
+
+    // Ниже 2 скрипта - чисто для посмотреть. На самом деле они должны вызываться аяксом
+    $('#registration_popup form').on('submit', function(e) {
+        e.preventDefault();
+        $.magnificPopup.open({
+            items: {
+                src: '#thanx_popup'
+            },
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            preloader: false,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        }, 0);
+    });
+
+    $('#password_popup form').on('submit', function(e) {
+        e.preventDefault();
+        $.magnificPopup.open({
+            items: {
+                src: '#notice_popup'
+            },
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            preloader: false,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        }, 0);
+    });
+
 });

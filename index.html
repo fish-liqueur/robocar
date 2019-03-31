@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<meta name="title" content="">-->
   <title></title>
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popups.css">
 
 </head>
 
@@ -33,10 +35,10 @@
         <img src="img/header_feedback.png" alt="">
         <span>Обратная&nbsp;связь</span>
       </a>
-
-      <a href="" class="nav__reg">
-        <span>Регистрация</span></a>
-      <a href="" class="nav__login">
+      <a href="#registration_popup" class="nav__reg js-reg">
+        <span>Регистрация</span>
+      </a>
+      <a href="#login_popup" class="nav__login js-login">
         <div class="nav__login-pic"></div>
         <!-- <img src="img/header_login.svg" alt=""> -->
         <span>Войти</span>
@@ -116,7 +118,7 @@
         <div class="slider-item__points">
           <div class="points__numb">
             <span class="points-numb__quantity">+10</span>
-            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" alt="">
           </div>
           <div class="points__text">
             <div class="points-text__title">10 баллов ждут вас на ivi.ru</div>
@@ -150,7 +152,7 @@
         <div class="slider-item__points">
           <div class="points__numb">
             <span class="points-numb__quantity">+10</span>
-            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" alt="">
           </div>
           <div class="points__text">
             <div class="points-text__title">10 баллов ждут вас на ivi.ru</div>
@@ -184,7 +186,7 @@
         <div class="slider-item__points">
           <div class="points__numb">
             <span class="points-numb__quantity">+10</span>
-            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+            <img class="points-numb__icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuOTYzIDMzLjU2YzcuNDAzIDAgMTMuNDAzLTcuMDkyIDEzLjQwMy0xNS44NCAwLTguNzQ4LTYtMTUuODQtMTMuNDAzLTE1Ljg0QzcuNTYxIDEuODggMS41NiA4Ljk3MiAxLjU2IDE3LjcyYzAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBkPSJNNS4yMTYgNy45NzJoNC44NzNNMi43NzkgMTIuODQ2aDcuMzFNMi43NzkgMTcuNzJoNy4zMU0yLjc3OSAyMi41OTRoNy4zMU01LjIxNiAyNy40NjhoNy4zMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNDg4IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS44MzcgMzMuNTZjNy40MDIgMCAxMy40MDMtNy4wOTIgMTMuNDAzLTE1Ljg0IDAtOC43NDgtNi0xNS44NC0xMy40MDMtMTUuODQtNy40MDIgMC0xMy40MDMgNy4wOTItMTMuNDAzIDE1Ljg0IDAgOC43NDggNiAxNS44NCAxMy40MDMgMTUuODR6IiBmaWxsPSIjRUMxNzRGIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMi40ODgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjY1MyAxNi45MDFjLS42MzQtLjE5NS0xLjM5Mi0uMjkyLTIuMjc2LS4yOTJoLTIuNDk1di00LjEyNGg3LjAzN3YtMS43ODNoLTkuMzE4djE0LjAzNmg0Ljc2NmMuOCAwIDEuNTEzLS4xIDIuMTQtLjMwMi42MjctLjIwMSAxLjE1NS0uNDkgMS41ODQtLjg2Ny40MjktLjM3Ny43NTUtLjgzLjk4LTEuMzYuMjI0LS41My4zMzYtMS4xMjMuMzM2LTEuNzggMC0uNTM4LS4wOTYtMS4wNDItLjI4OC0xLjUxYTMuMDg5IDMuMDg5IDAgMCAwLS45MDEtMS4yMTRjLS40MS0uMzQtLjkzMS0uNjA5LTEuNTY1LS44MDR6bS0uOTg0IDUuODYzYy0uMzU1LjExNC0uNzg4LjE3MS0xLjMwMi4xNzFoLTIuNDg2di00LjUyM2gyLjQ5NmMuNTEzIDAgLjk0Ny4wNTIgMS4zMDEuMTU2LjM1NC4xMDQuNjQyLjI1Mi44NjMuNDQ0LjIyLjE5MS4zOC40MjcuNDc4LjcwNi4wOTcuMjguMTQ2LjU5NS4xNDYuOTQ2IDAgLjMyNS0uMDUuNjI1LS4xNTEuOTAxLS4xMDEuMjc3LS4yNjIuNTE3LS40ODMuNzIyYTIuMjcgMi4yNyAwIDAgMS0uODYyLjQ3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" alt="">
           </div>
           <div class="points__text">
             <div class="points-text__title">10 баллов ждут вас на ivi.ru</div>
@@ -213,7 +215,74 @@
   </div>
 </footer>
 
+<div class="auth-popup zoom-anim-dialog mfp-hide" id="login_popup">
+  <div class="popup__title">Вход</div>
+  <form action="" method="post">
+    <input class="popup__input" type="email" name="email" placeholder="E-mail">
+    <input class="popup__input" type="password" name="password" placeholder="Пароль">
+    <input class="popup__input" type="submit" value="Войти">
+  </form>
+  <a class="popup__forgot-pass js-password" href="#password_popup">Забыли пароль?</a>
+  <div class="popup__text">Или войдите через соцсети:</div>
+  <div class="popup__soc-buttons">
+    <button class="popup__soc-button --vk"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS42ODQgMEg4LjMxNkMxLjU5MiAwIDAgMS41OTIgMCA4LjMxNnY3LjM2OEMwIDIyLjQwOCAxLjU5MiAyNCA4LjMxNiAyNGg3LjM2OEMyMi40MDggMjQgMjQgMjIuNDA4IDI0IDE1LjY4NFY4LjMxNkMyNCAxLjU5MiAyMi40MDggMCAxNS42ODQgMHptMy40MzggNy42MjJjLjUyNSAwIC42NDQuMjcuNTI1LjY0My0uMTg1Ljg1NC0xLjcyMSAzLjEyLTIuMTk3IDMuODIxLS4wOS4xMzMtLjE0My4yMS0uMTQuMjEtLjE4Ni4zMDUtLjI1NC40NCAwIC43OC4wOTIuMTI1LjI4Ni4zMTYuNTA5LjUzNC4yMjkuMjI1LjQ4Ny40NzguNjkzLjcxOS43NDYuODQ3IDEuMzIyIDEuNTU4IDEuNDc0IDIuMDUuMTM1LjQ5LS4xMDIuNzQ0LS42MS43NDRoLTEuNzQ0Yy0uNDYzIDAtLjcwMS0uMjY1LTEuMjA5LS44M2EyMS40IDIxLjQgMCAwIDAtLjg0LS44OTdjLTEuMDM0LTEtMS40OTEtMS4xMzUtMS43NDUtMS4xMzUtLjM1NiAwLS40NTguMDg1LS40NTguNTkzdjEuNTc1YzAgLjQyNC0uMTM1LjY3OC0xLjI1My42NzgtMS44NDYgMC0zLjg5Ni0xLjExOC01LjMzNS0zLjIwMkM0LjYyNCAxMC44NTcgNC4wMyA4LjU1MyA0LjAzIDguMDk2YzAtLjI1NC4wODUtLjQ5MS41OTMtLjQ5MWgxLjc2MWMuNDQgMCAuNjEuMTg2Ljc4LjY3Ny44NjMgMi40OSAyLjMwMyA0LjY3NSAyLjg5NiA0LjY3NS4yMiAwIC4zMjItLjEwMi4zMjItLjY2VjkuNzIxYy0uMDQyLS43MzItLjI5Ny0xLjA1LS40ODYtMS4yODctLjExNy0uMTQ3LS4yMDktLjI2Mi0uMjA5LS40MjQgMC0uMjAzLjE3LS40MDYuNDQtLjQwNmgyLjc0NGMuMzczIDAgLjUwOC4yMDMuNTA4LjY0M3YzLjQ3M2MwIC4zNzIuMTUzLjUwOC4yNzEuNTA4LjIyIDAgLjQwNy0uMTM2LjgxMy0uNTQyIDEuMjU0LTEuNDA2IDIuMTUxLTMuNTc0IDIuMTUxLTMuNTc0LjExOS0uMjU0LjMyMi0uNDkxLjc2My0uNDkxaDEuNzQ0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt=""></button>
+    <button class="popup__soc-button --fb"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuMjczIDMuNDY3SDYuODRjLS4zMjQgMC0uNzMuMzItLjczLjg4djEuNzZoMy4xNjNsLS41NjggMi44SDYuMDN2Ny43NkgzLjExMXYtNy44NEguMjczdi0yLjU2aDIuNjc1di0xLjZjMC0yLjI0IDEuNjIyLTQgMy43My00aDIuNDMzdjIuOGguMTYyeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt=""></button>
+  </div>
+  <div class="popup__line"></div>
+  <a class="popup__bottom-link js-reg" href="#registration_popup">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+</div>
+
+<div class="auth-popup zoom-anim-dialog mfp-hide" id="registration_popup">
+  <div class="popup__title">Регистрация</div>
+  <form action="" method="post">
+    <label class="popup__label">
+      <span>E-mail / логин</span>
+      <input class="popup__input" type="email" name="email" placeholder="E-mail для связи и логина">
+    </label>
+    <label class="popup__label">
+      <span>Пароль</span>
+      <input class="popup__input" type="text" name="password" placeholder="Пароль не менее 8 символов">
+    </label>
+    <label class="popup__label">
+      <input class="popup__input" type="checkbox" name="agreement">
+      <span class="popup__span-agreement">Я согласен с <a href="" target="_blank">правилами акции</a></span>
+    </label>
+    <input class="popup__input" type="submit" value="Зарегистрироваться">
+  </form>
+  <div class="popup__text">Или зарегистрируйтесь через соцсети:</div>
+  <div class="popup__soc-buttons">
+    <button class="popup__soc-button --vk"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS42ODQgMEg4LjMxNkMxLjU5MiAwIDAgMS41OTIgMCA4LjMxNnY3LjM2OEMwIDIyLjQwOCAxLjU5MiAyNCA4LjMxNiAyNGg3LjM2OEMyMi40MDggMjQgMjQgMjIuNDA4IDI0IDE1LjY4NFY4LjMxNkMyNCAxLjU5MiAyMi40MDggMCAxNS42ODQgMHptMy40MzggNy42MjJjLjUyNSAwIC42NDQuMjcuNTI1LjY0My0uMTg1Ljg1NC0xLjcyMSAzLjEyLTIuMTk3IDMuODIxLS4wOS4xMzMtLjE0My4yMS0uMTQuMjEtLjE4Ni4zMDUtLjI1NC40NCAwIC43OC4wOTIuMTI1LjI4Ni4zMTYuNTA5LjUzNC4yMjkuMjI1LjQ4Ny40NzguNjkzLjcxOS43NDYuODQ3IDEuMzIyIDEuNTU4IDEuNDc0IDIuMDUuMTM1LjQ5LS4xMDIuNzQ0LS42MS43NDRoLTEuNzQ0Yy0uNDYzIDAtLjcwMS0uMjY1LTEuMjA5LS44M2EyMS40IDIxLjQgMCAwIDAtLjg0LS44OTdjLTEuMDM0LTEtMS40OTEtMS4xMzUtMS43NDUtMS4xMzUtLjM1NiAwLS40NTguMDg1LS40NTguNTkzdjEuNTc1YzAgLjQyNC0uMTM1LjY3OC0xLjI1My42NzgtMS44NDYgMC0zLjg5Ni0xLjExOC01LjMzNS0zLjIwMkM0LjYyNCAxMC44NTcgNC4wMyA4LjU1MyA0LjAzIDguMDk2YzAtLjI1NC4wODUtLjQ5MS41OTMtLjQ5MWgxLjc2MWMuNDQgMCAuNjEuMTg2Ljc4LjY3Ny44NjMgMi40OSAyLjMwMyA0LjY3NSAyLjg5NiA0LjY3NS4yMiAwIC4zMjItLjEwMi4zMjItLjY2VjkuNzIxYy0uMDQyLS43MzItLjI5Ny0xLjA1LS40ODYtMS4yODctLjExNy0uMTQ3LS4yMDktLjI2Mi0uMjA5LS40MjQgMC0uMjAzLjE3LS40MDYuNDQtLjQwNmgyLjc0NGMuMzczIDAgLjUwOC4yMDMuNTA4LjY0M3YzLjQ3M2MwIC4zNzIuMTUzLjUwOC4yNzEuNTA4LjIyIDAgLjQwNy0uMTM2LjgxMy0uNTQyIDEuMjU0LTEuNDA2IDIuMTUxLTMuNTc0IDIuMTUxLTMuNTc0LjExOS0uMjU0LjMyMi0uNDkxLjc2My0uNDkxaDEuNzQ0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt=""></button>
+    <button class="popup__soc-button --fb"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuMjczIDMuNDY3SDYuODRjLS4zMjQgMC0uNzMuMzItLjczLjg4djEuNzZoMy4xNjNsLS41NjggMi44SDYuMDN2Ny43NkgzLjExMXYtNy44NEguMjczdi0yLjU2aDIuNjc1di0xLjZjMC0yLjI0IDEuNjIyLTQgMy43My00aDIuNDMzdjIuOGguMTYyeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt=""></button>
+  </div>
+  <div class="popup__line"></div>
+  <a class="popup__bottom-link js-login" href="#login_popup">ВОЙТИ, если уже есть аккаунт</a>
+</div>
+
+<div class="auth-popup zoom-anim-dialog mfp-hide" id="password_popup">
+  <div class="popup__title">Забыли пароль?</div>
+  <div class="popup__circle-img --forgot-pass"></div>
+  <div class="popup__guide">Введите зарегистрированный e-mail и дождитесь письма с ссылкой на восстановление</div>
+  <form action="" method="post">
+    <input class="popup__input" type="email" name="email" placeholder="E-mail">
+    <input class="popup__input" type="submit" value="Отправить">
+  </form>
+</div>
+
+<div class="auth-popup zoom-anim-dialog mfp-hide" id="notice_popup">
+  <div class="popup__circle-img --notice"></div>
+  <div class="popup__guide">Инструкции по восстановлению пароля отправлены на email</div>
+  <button class="popup__ok">OK</button>
+</div>
+
+<div class="auth-popup zoom-anim-dialog mfp-hide" id="thanx_popup">
+  <div class="popup__title">Спасибо!</div>
+  <div class="popup__circle-img --thanx"></div>
+  <div class="popup__guide">Пожалуйста, перейдите по ссылке из письма, которое было отправлено на ваш e-mail</div>
+  <button class="popup__ok">OK</button>
+</div>
+
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/magnific-popup.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
