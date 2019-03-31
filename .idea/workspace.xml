@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7467ecf3-5868-4e98-aae5-53a4dd974ae5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/img/involvement__arrow-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__morepoints-robot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__morepoints-robot2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__slide-1-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__slide-2-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__slide-3-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement__slide-4-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement_step-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/involvement_step-wrapper.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -17,11 +26,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6382829">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1455">
-                  <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+                <state relative-caret-position="735">
+                  <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
                   <folding>
                     <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,6 +44,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1489">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -42,7 +60,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/popups.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
+                <state relative-caret-position="749">
                   <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
                   <folding>
                     <element signature="e#3690#3723#1" expanded="true" />
@@ -85,8 +103,8 @@
         <option value="$PROJECT_DIR$/css/magnific-popup.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/popups.css" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -168,18 +186,18 @@
       <workItem from="1553938836783" duration="1042000" />
       <workItem from="1553939895319" duration="33260000" />
       <workItem from="1553991996206" duration="21000" />
-      <workItem from="1554036215694" duration="29115000" />
+      <workItem from="1554036215694" duration="30170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74319000" />
+    <option name="totallyTimeSpent" value="75374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14294331" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17852835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -272,13 +290,6 @@
     <entry file="file://$PROJECT_DIR$/img/involvement__slide-1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/magnific-popup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="349" lean-forward="true" selection-start-line="349" selection-end-line="349" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -289,17 +300,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/css/magnific-popup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="281">
+          <caret line="168" column="2" selection-start-line="168" selection-start-column="2" selection-end-line="168" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/magnific-popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/popups.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+          <folding>
+            <element signature="e#3690#3723#1" expanded="true" />
+            <element signature="e#4409#6282#1" expanded="true" />
+            <element signature="e#6506#8379#1" expanded="true" />
+            <element signature="e#9033#11174#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+        <state relative-caret-position="735">
+          <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -312,16 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/popups.css">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
-          <folding>
-            <element signature="e#3690#3723#1" expanded="true" />
-            <element signature="e#4409#6282#1" expanded="true" />
-            <element signature="e#6506#8379#1" expanded="true" />
-            <element signature="e#9033#11174#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1489">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
