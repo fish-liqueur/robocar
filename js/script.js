@@ -34,10 +34,12 @@ $('.involvement__slide').on("mouseenter", function() {
 
 $('.js-involvement__step-arr-left').click(function() {
   nextInvolvementSlide(false);
+  // scroll 1 slide to the left
 })
 
 $('.js-involvement__step-arr-right').click(function() {
   nextInvolvementSlide(true);
+  // scroll 1 slide to the right
 })
 
 var nextInvolvementSlide = function(forward) {
@@ -58,6 +60,7 @@ var nextInvolvementSlide = function(forward) {
   setInvolvementSlideDescription();
 };
 
+  // setting the text which decribes the current slide
 var setInvolvementSlideDescription = function() {
   switch (involvementSlideNum) {
     case 1:
@@ -76,4 +79,22 @@ var setInvolvementSlideDescription = function() {
       $('.js-involvement__step-descr-text').text('1. Купите игрушку Robocar Poli в любом магазине и сохраните чек');
   }
 };
+
+var animateButton = function(e) {
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+
 });
