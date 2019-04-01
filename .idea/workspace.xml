@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7467ecf3-5868-4e98-aae5-53a4dd974ae5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/involvement__arrow-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__morepoints-robot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__morepoints-robot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__slide-1-m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__slide-2-m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__slide-3-m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement__slide-4-m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement_step-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/involvement_step-wrapper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/popups.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/popups.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -23,58 +13,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6382829">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
-                  <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
-                  <folding>
-                    <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1489">
-                  <caret line="3" selection-start-line="3" selection-end-line="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/popups.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="749">
-                  <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
-                  <folding>
-                    <element signature="e#3690#3723#1" expanded="true" />
-                    <element signature="e#4409#6282#1" expanded="true" />
-                    <element signature="e#6506#8379#1" expanded="true" />
-                    <element signature="e#9033#11174#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
+              <folding>
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12761#12767#0" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#20664#20670#0" expanded="true" />
+                <element signature="e#20688#20694#0" expanded="true" />
+                <element signature="e#20704#20710#0" expanded="true" />
+                <element signature="e#21086#21092#0" expanded="true" />
+                <element signature="e#21122#21128#0" expanded="true" />
+                <element signature="e#21394#21400#0" expanded="true" />
+                <element signature="e#21409#21415#0" expanded="true" />
+                <element signature="e#21439#21445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,9 +69,9 @@
         <option value="$PROJECT_DIR$/css/slick.css" />
         <option value="$PROJECT_DIR$/css/magnific-popup.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/popups.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/popups.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -186,12 +153,12 @@
       <workItem from="1553938836783" duration="1042000" />
       <workItem from="1553939895319" duration="33260000" />
       <workItem from="1553991996206" duration="21000" />
-      <workItem from="1554036215694" duration="30170000" />
+      <workItem from="1554036215694" duration="32557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75374000" />
+    <option name="totallyTimeSpent" value="77761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -316,10 +283,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/popups.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+        <state relative-caret-position="4336">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
           <folding>
             <element signature="e#3690#3723#1" expanded="true" />
             <element signature="e#4409#6282#1" expanded="true" />
@@ -331,24 +305,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="783">
           <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12761#12767#0" expanded="true" />
             <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#button#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#button#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#20664#20670#0" expanded="true" />
+            <element signature="e#20688#20694#0" expanded="true" />
+            <element signature="e#20704#20710#0" expanded="true" />
+            <element signature="e#21086#21092#0" expanded="true" />
+            <element signature="e#21122#21128#0" expanded="true" />
+            <element signature="e#21394#21400#0" expanded="true" />
+            <element signature="e#21409#21415#0" expanded="true" />
+            <element signature="e#21439#21445#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1489">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

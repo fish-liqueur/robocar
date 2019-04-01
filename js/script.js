@@ -94,7 +94,7 @@ $(window).load(function() {
     // Popup
     $('.js-login, .js-reg, .js-password').magnificPopup({
         type: 'inline',
-        fixedContentPos: false,
+        fixedContentPos: true,
         fixedBgPos: true,
         overflowY: 'auto',
         preloader: false,
@@ -114,7 +114,7 @@ $(window).load(function() {
                 src: '#thanx_popup'
             },
             type: 'inline',
-            fixedContentPos: false,
+            fixedContentPos: true,
             fixedBgPos: true,
             overflowY: 'auto',
             preloader: false,
@@ -130,7 +130,7 @@ $(window).load(function() {
                 src: '#notice_popup'
             },
             type: 'inline',
-            fixedContentPos: false,
+            fixedContentPos: true,
             fixedBgPos: true,
             overflowY: 'auto',
             preloader: false,
